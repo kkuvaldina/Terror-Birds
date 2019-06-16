@@ -1,0 +1,175 @@
+.img-1, .img-2, .img-3, .img-7, .img-5, .img-9 {
+	display: none;
+}
+body {
+	background-color: purple;
+	font-family: 'Permanent Marker', cursive;
+}
+
+img {
+	display: block;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+}
+
+.menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 40px;
+	margin-top: 0;
+}
+
+.menu li {
+	display: block;
+	margin-bottom: 5px;
+}
+.menu li a {
+	text-decoration: none;
+	display: block;
+	font-size: 40px;
+	color: white;
+	padding: 5px 10px;
+	border: 2px solid purple;
+}
+
+
+.wrapper {
+	position: relative;
+	padding: 130px 40px 20px;
+}
+
+.menu li a:hover, .menu li:nth-child(2) a {
+	border-radius: 40px;
+	border: 2px solid black;
+	box-shadow: 0 0 6px white;
+	transition: 500ms;
+}
+
+h1 {
+	font-size: 38px;
+}
+h2 {
+	font-size: 1.6em;
+}
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: stretch;
+	justify-content: space-between;
+	background-color: black;
+	color: purple; 
+}
+
+.content-1, .content-2, .content-3 {
+	border: 2px solid gray;
+	padding: 15px;
+}
+
+p {
+	text-align: justify;
+	padding: 10px 40px;
+    font-size: 21px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+@media(max-width: 914px) {
+	img {
+		max-width: 430px;
+	}
+	.menu li a {
+		font-size: 36px;
+	}
+}
+
+@media(max-width: 805px) {
+	.wrapper {
+		padding: 130px 20px 20px;
+	}
+	.menu li a {
+		font-size: 34px;
+	}
+	h1 {
+		font-size: 35px;
+	}
+
+}
+
+@media(max-width: 703px) {
+	.menu li {
+		display: inline-block;
+		
+	}
+	.menu {
+		display: flex;
+		justify-content: center;
+	}
+	img {
+		max-width: 350px;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	p {
+		padding: 10px 10px;
+    	font-size: 20px;
+	}
+}
+
+@media(max-width: 620px) {
+	.wrapper {
+		padding: 96px 20px 20px;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	img {
+		max-width: 280px;
+	}
+}
+
+@media(max-width: 513px) {
+	.menu li a {
+		font-size: 25px;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	p {
+		font-size: 17px;
+	}
+	.wrapper {
+		padding: 96px 0px 20px;
+	}
+}
+
+@media(max-width: 426px) {
+	.wrapper {
+		padding: 0;
+	}
+	.menu {
+		position: static;
+
+	}
+	p {
+		font-size: 16px;
+		padding: 0;
+	}
+}
+
+@media(max-width: 426px) {
+	.menu li a {
+		font-size: 19px;
+	}
+	
+}
