@@ -80,10 +80,16 @@ h2 {
     overflow: auto;
 }
 
+.content-1:hover, .content-2:hover, .content-3:hover {
+    box-shadow: 0 0 15px #112F47;
+}
+
 img {
     width: 35%;
     float: right;
-    padding: 5px;
+    padding: 2px;
+    margin: 5px;
+    box-shadow: 0 0 15px #112F47;
 }
 
 
@@ -104,6 +110,7 @@ img {
 @media(max-width: 522px) {
     h1 {top: 136px;}
     h2 {top: 191px;}
+    img {width: 55%;}
 }
 
 @media(max-width: 435px) {
@@ -135,4 +142,5 @@ img {
     .content-1, .content-2, .content-3 {
         margin-bottom: 10px;
     }
+    img {width: 100%; margin-right: auto; margin-left: auto;}
 }
